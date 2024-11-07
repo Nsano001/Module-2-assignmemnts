@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IPS annual conference</title>
+        <style>
+            body {
+                margin: 15px 15px 15px 15px;
+                background-origin: padding-box;
+                border: 20px;
+                border-color: rgb(70, 101, 40);
+            }
+            #Title {
+                font-style:italic;
+                color:hwb(240 80% 20%);
+                background-color: rgb(70, 83, 79);
+                font-weight: bold;
+            }
+            body {
+                background-color: rgb(135, 172, 159);
+            }
+            .location-image {
+                width: 2%;
+            }
+            #topic {
+                font-style: italic;
+            }
+            .main {
+                border: 5px solid black;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                margin-left: 10%;
+                margin-right: 10%;
+                text-align: center;
+                justify-content: center;
+            
+            }
+            .contact {
+                font-weight: bold;
+            }
+            .rsvp {
+                margin-top: 20px;
+                padding: 15px;
+                border: 1px solid #004d00;
+                border-radius: 8px;
+                background-color: #f9fdf9;
+                max-width: 600px;
+                margin: auto;
+            }
+            form label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            form input, form textarea {
+                width: 50%;
+                padding: 8px;
+                margin-top: 5px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+            form button {
+                margin-top: 15px;
+                width: 20%;
+                padding: 10px;
+                background-color: #004d00;
+                color: white;
+                font-size: 1em;
+                font-weight: bold;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            form button:hover {
+                background-color: #336600;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+             <h1 id="Title">African Pharmacoepidemiology Society </h1>
+             <h2>Annual Conference: 2024</h2>
+             <h3>Topic:<span id="topic">AI and ML in detecting rare adverse effects in medication use</span></h3>
+             <p>Guest: Proffesor A. Wintersstein <br>(University of Florida)</p>
+             <P>Date:15th November, 2024</P> 
+             <p><img class="location-image" src="https://cdn-icons-png.flaticon.com/512/535/535137.png">: Faculty of Pharmaceutical sciences, Ahmadu Bello University, Zaria </p>
+             <p> <span class="contact">Contact</span><br>
+             <a target="_blank" href="nsanojobdauda@gmail.com">Gmail</a> 08166046223</p>
+         <span class="rsvp">
+             <h2>RSVP</h2>
+                <form action="https://en.wikipedia.org/wiki/RSVP#:~:text=RSVP%20is%20an%20initialism%20derived,require%20confirmation%20of%20an%20invitation." method="post"> <!-- Replace with your form processing URL -->
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="guests">Number of Guests:</label>
+                  <input type="number" id="guests" name="guests" min="1" max="5">
+              
+                  <label for="notes">Additional Notes:</label>
+                  <textarea id="notes" name="notes" rows="3" placeholder="Any dietary restrictions or special requests"></textarea><br>
+              
+                  <button type="submit">Submit RSVP</button>
+                </form> 
+         </span>
+        </div>
+    </body>
+</html>
